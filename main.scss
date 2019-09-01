@@ -5,7 +5,7 @@
 $body-color: {{ site.body_background_color }};
 
 $header-image: "{{ site.cover_image }}";
-$device-color: "https://oss.mystory.cc/fan/static/{{ site.device_color }}.png";
+$device-color: "https://mystory-cc.oss-cn-beijing.aliyuncs.com/fan/static/{{ site.device_color }}.png";
 
 $accent-color: {{ site.link_color }};
 
