@@ -46,8 +46,8 @@ features                                  :
     description                           : 其实我们不光有电影，还有美剧、纪录片、动画片、脱口秀、演讲、教学视频等等。让你能接触各方面纯正的英语场景。
     fontawesome_icon_name                 : play-circle
 
-  - title                                 : 听说读写
-    description                           : 相声讲究说学逗唱，语言在乎听说读写。看看字幕都是啥，尝试去回答缺失的词，答对之后听电影里在说什么，打开麦克风模仿说一遍，爽！
+  - title                                 : 读写听说
+    description                           : 相声讲究说学逗唱，语言在乎读写听说。看看字幕都是啥，尝试去回答缺失的词，答对之后听电影里在说什么，打开麦克风模仿说一遍，爽！
     fontawesome_icon_name                 : sync
 
   - title                                 : 练习运用
