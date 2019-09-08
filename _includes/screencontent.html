@@ -4,7 +4,7 @@
     {% if file.path contains 'assets/screenshot/' %}
         <script>
             $(function() {
-                $(".iphoneScreen").attr('src', '{{ site.github.baseurl }}{{ file.path }}');
+                $(".iphoneScreen").attr('src', "https://mystory-cc.oss-cn-beijing.aliyuncs.com/fan/static/screenshot.jpg");
                 $(".iphoneScreen").removeClass("hidden");
                 console.log("{{ file.path }}");
             });
