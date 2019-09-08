@@ -56,6 +56,12 @@
                             {% endif %}
                             <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="https://mystory-cc.oss-cn-beijing.aliyuncs.com/fan/static/ios-download.png"></a>
                         </div>
+                        <div style="margin-top: 45px;">
+                            <video id='my-video' class='video-js vjs-big-play-centered' controls preload='auto' width='400' height='225'
+                                   poster='https://mystory-cc.oss-cn-beijing.aliyuncs.com/fan/image/a2f20509d8b/2c91f7b733b.jpg' data-setup='{}' style="outline: none;">
+                                <source src='https://mystory-cc.oss-cn-beijing.aliyuncs.com/fan/video/a2f20509d8b/2c91f7b733b.mp4' type='video/mp4'>
+                            </video>
+                        </div>
                     </div>
                     {% include features.html %}
                     {% include footer.html %}
@@ -64,4 +70,5 @@
             </div>
         </div>
 </body>
+<script src='https://vjs.zencdn.net/7.6.0/video.js'></script>
 </html>
