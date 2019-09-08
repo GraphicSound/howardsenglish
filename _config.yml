@@ -35,27 +35,27 @@ youtube_username                          :
 features                                  :
 
   - title                                 : 对话模式
-    description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. Push to gh-pages branch. Voilá!
+    description                           : 想象和电影里的人物对话，思考对方是如何表达的、自己又如何回应得更贴合场景。你，也能成为主角。
     fontawesome_icon_name                 : magic
 
   - title                                 : 全面理解
-    description                           : Preview your app in the context of an iPhone device. Five different device colors included.
+    description                           : 平时看电影非常快，字幕里都有什么单词，有哪些语法，有哪些背景故事？让我们慢下来，细细去品味。
     fontawesome_icon_name                 : mobile
 
-  - title                                 : 经典热门
-    description                           : Preview app video on the iPhone device simply by placing your video files in the videos folder.
+  - title                                 : 内容丰富
+    description                           : 其实我们不光有电影，还有美剧、纪录片、动画片、脱口秀、演讲、教学视频等等。让你能接触各方面纯正的英语场景。
     fontawesome_icon_name                 : play-circle
 
   - title                                 : 听说读写
-    description                           : Enter iOS app ID in the _config.yml file to automatically fetch app icon, price and App Store Link.
+    description                           : 相声讲究说学逗唱，语言在乎听说读写。看看字幕都是啥，尝试去回答缺失的词，答对之后听电影里在说什么，打开麦克风模仿说一遍，爽！
     fontawesome_icon_name                 : sync
 
   - title                                 : 练习运用
-    description                           : Tweak accent color, images, icons and transparency via the _config.yml file. No HTML/CSS needed.
+    description                           : 光背单词有毛用，咱再也不能当哑巴了！在你答题的时候，耗子英语给你创造了逆向思维的机会，让你能真正去运用英语。
     fontawesome_icon_name                 : adjust
 
   - title                                 : 随时查阅
-    description                           : Add features (like this one) to your site via the _config.yml file. No HTML/CSS needed.
+    description                           : 字幕里每一个单词都能随时方便地查阅，不会在漏掉任何一个不懂的单词。想想看，就算只把你最喜欢的一部电影看明白，你得有多大提高？
     fontawesome_icon_name                 : star
 
 
