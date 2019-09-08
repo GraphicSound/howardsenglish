@@ -36,11 +36,11 @@ features                                  :
 
   - title                                 : 对话模式
     description                           : 想象和电影里的人物对话，思考对方是如何表达的、自己又如何回应得更贴合场景。你，也能成为主角。
-    fontawesome_icon_name                 : magic
+    fontawesome_icon_name                 : comments
 
   - title                                 : 全面理解
     description                           : 平时看电影非常快，字幕里都有什么单词，有哪些语法，有哪些背景故事？让我们慢下来，细细去品味。
-    fontawesome_icon_name                 : mobile
+    fontawesome_icon_name                 : info-circle
 
   - title                                 : 内容丰富
     description                           : 其实我们不光有电影，还有美剧、纪录片、动画片、脱口秀、演讲、教学视频等等。让你能接触各方面纯正的英语场景。
@@ -48,15 +48,15 @@ features                                  :
 
   - title                                 : 读写听说
     description                           : 相声讲究说学逗唱，语言在乎读写听说。看看字幕都是啥，尝试去回答缺失的词，答对之后听电影里在说什么，打开麦克风模仿说一遍，爽！
-    fontawesome_icon_name                 : sync
+    fontawesome_icon_name                 : language
 
   - title                                 : 练习运用
     description                           : 光背单词有毛用，咱再也不能当哑巴了！在你答题的时候，耗子英语给你创造了逆向思维的机会，让你能真正去运用英语。
-    fontawesome_icon_name                 : adjust
+    fontawesome_icon_name                 : brain
 
   - title                                 : 随时查阅
     description                           : 字幕里每一个单词都能随时方便地查阅，不会在漏掉任何一个不懂的单词。想想看，就算只把你最喜欢的一部电影看明白，你得有多大提高？
-    fontawesome_icon_name                 : star
+    fontawesome_icon_name                 : search
 
 
 
