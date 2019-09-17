@@ -52,7 +52,7 @@
                         </div>
                         <div class="downloadButtonsContainer">
                             {% if site.playstore_link %}
-                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="https://mystory-cc.oss-cn-beijing.aliyuncs.com/fan/static/android-download.png"></a>
+                                <a class="playStoreLink" onclick="checkWeixin()"><img class="playStore" src="https://mystory-cc.oss-cn-beijing.aliyuncs.com/fan/static/android-download.png"></a>
                             {% endif %}
                             <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="https://mystory-cc.oss-cn-beijing.aliyuncs.com/fan/static/ios-download.png"></a>
                         </div>
@@ -72,42 +72,46 @@
         </div>
 </body>
 <script>
-    function is_weixin() {
-        var ua = navigator.userAgent.toLowerCase();
-        if (ua.match(/MicroMessenger/i) == "micromessenger") {
-            return true;
+    function checkWeixin() {
+        function is_weixin() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        var isWeixin = is_weixin();
+        var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
+
+        function loadHtml() {
+            var div = document.createElement('div');
+            div.id = 'weixin-tip';
+            div.innerHTML = '<h1>微信内打开</h1>';
+            document.body.appendChild(div);
+        }
+
+        function loadStyleText(cssText) {
+            var style = document.createElement('style');
+            style.rel = 'stylesheet';
+            style.type = 'text/css';
+            try {
+                style.appendChild(document.createTextNode(cssText));
+            } catch (e) {
+                style.styleSheet.cssText = cssText; //ie9以下
+            }
+            var head = document.getElementsByTagName("head")[0]; //head标签之间加上style样式
+            head.appendChild(style);
+        }
+
+        var cssText = "#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
+        if (isWeixin) {
+            loadHtml();
+            loadStyleText(cssText);
         } else {
-            return false;
+            window.location.href = "http://oss.mystory.cc/fan/download/howardsenglish-v1.3.0.apk";
         }
-    }
-
-    var isWeixin = is_weixin();
-    var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
-
-    function loadHtml() {
-        var div = document.createElement('div');
-        div.id = 'weixin-tip';
-        div.innerHTML = '<h1>微信内打开</h1>';
-        document.body.appendChild(div);
-    }
-
-    function loadStyleText(cssText) {
-        var style = document.createElement('style');
-        style.rel = 'stylesheet';
-        style.type = 'text/css';
-        try {
-            style.appendChild(document.createTextNode(cssText));
-        } catch (e) {
-            style.styleSheet.cssText = cssText; //ie9以下
-        }
-        var head = document.getElementsByTagName("head")[0]; //head标签之间加上style样式
-        head.appendChild(style);
-    }
-
-    var cssText = "#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
-    if (isWeixin) {
-        loadHtml();
-        loadStyleText(cssText);
     }
 </script>
 </html>
